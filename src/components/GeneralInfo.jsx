@@ -1,10 +1,10 @@
 function GeneralInfo({ isEditing, info, setInfo }) {
   function handleChange(e) {
     const { name, value } = e.target;
-    setInfo(prevInfo => ({
-      ...prevInfo,
+    setInfo({
+      ...info,
       [name]: value,
-    }));
+    });
   }
 
   return (
