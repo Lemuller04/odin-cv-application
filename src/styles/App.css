@@ -68,3 +68,11 @@ fieldset {
   justify-self: end;
   margin-right: 1em;
 }
+
+@media (max-width: 1360px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
