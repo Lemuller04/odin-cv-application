@@ -1,12 +1,104 @@
-# React + Vite
+# CV Application (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple CV/résumé generator built with React. Users can input personal information, education, and work experience, then toggle between edit and preview modes to see their formatted CV.
 
-Currently, two official plugins are available:
+This project is part of [The Odin Project’s React curriculum](https://www.theodinproject.com/paths/full-stack-javascript/courses/react).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## Expanding the ESLint configuration
+- Personal Information
+Name, email, phone number, and address.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Education
+Add multiple education entries with school name, title of study, and dates.
+Supports adding/removing entries dynamically.
+
+- Experience
+Add multiple job entries with company name, position, responsibilities, and dates.
+Supports adding/removing entries dynamically.
+
+- Edit / Save Toggle
+All sections can be edited when in “Edit” mode.
+In “Save” mode, inputs are disabled and a live preview of the CV is shown.
+
+- Live Preview
+The right side shows the formatted CV, updating automatically as you edit.
+
+## 📸 Preview
+![](public/preview.png)
+
+## 🛠️ Technologies Used
+
+- React (with functional components and hooks)
+
+- Vite (development build tool)
+
+- CSS for styling
+
+## 📂 Project Structure
+
+```bash
+src/
+├── components/
+│   ├── GeneralInfo.jsx
+│   ├── EducationInfo.jsx
+│   ├── ExperienceInfo.jsx
+│   └── Preview.jsx
+├── styles/
+│   ├── App.css
+│   └── preview.css
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## 📖 How to Run
+
+```bash
+# Clone this repo
+git clone <your-repo-url>
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+Then open [http://localhost:5173](localhost:5173) in your browser
+
+## 📚 Learning Outcomes
+
+- Practiced state management and controlled components in React.
+
+- Gained experience with props drilling and component composition.
+
+- Learned how to conditionally render UI based on edit/submit state.
+
+- Built a realistic multi-entry form system with add/remove functionality.
+
+## ✅ Odin Requirements Covered
+
+- General info section (name, email, phone)
+
+- Education section (school, title, date of study)
+
+- Experience section (company, position, responsibilities, dates)
+
+- Edit & Submit buttons to toggle between form and display mode
+
+- State & props used to manage and pass data
+
+- Component-based structure with separate files
+
+- Organized styles directory
+
+## 🌟 Extra Features
+
+- Multiple entries for education and experience (Add / Remove)
+
+- Address field in general information
+
+- Semantic HTML (fieldset, legend, section, header)
+
+- “A4 paper” styled preview for print-like formatting
