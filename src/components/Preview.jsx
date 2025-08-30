@@ -1,4 +1,4 @@
-import "./preview.css";
+import "../styles/preview.css";
 
 function Preview({ cvData }) {
   const {general, education, experience } = cvData;

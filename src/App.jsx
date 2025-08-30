@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './styles/App.css'
 
 import GeneralInfo from "./components/GeneralInfo.jsx";
 import EducationInfo from "./components/EducationInfo.jsx";
