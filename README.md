@@ -56,7 +56,7 @@ src/
 
 ```bash
 # Clone this repo
-git clone <your-repo-url>
+git clone https://github.com/Lemuller04/odin-cv-application.git
 
 # Install dependencies
 npm install
@@ -65,7 +65,7 @@ npm install
 npm run dev
 ```
 
-Then open [http://localhost:5173](localhost:5173) in your browser
+Then open [http://localhost:5173](http://localhost:5173) in your browser
 
 ## 📚 Learning Outcomes
 
